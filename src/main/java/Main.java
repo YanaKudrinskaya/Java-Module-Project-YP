@@ -7,7 +7,6 @@ public class Main {
 
         for (int i = 1; i <= 3; i++) {
             System.out.println("Введите название " + i + " автомобиля");
-            scanner.next();
             String name = scanner.nextLine();
 
             while (true) {
@@ -25,6 +24,7 @@ public class Main {
                 }
                 Automobile automobile = new Automobile(name, speed);
                 race.leader(automobile);
+                scanner.nextLine();
                 break;
             }
         }
